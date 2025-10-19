@@ -1,0 +1,11 @@
+name: build sample
+on: [push]
+  branches:
+      -master
+jobs:
+  build:
+    runs on: ubuntu-latest
+    steps:
+        -name: welcome
+        run: |
+          echo "build successful"
