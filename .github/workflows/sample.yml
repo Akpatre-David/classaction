@@ -1,12 +1,25 @@
 name: build sample
 on: 
-  push:
-      branches:
-        -master
+    push:
+        branches:
+        - master
 jobs:
   build:
     runs on: ubuntu-latest
     steps:
-        -name: welcome
-        run: |
-          echo "build successful"
+        - name: welcome
+          run: |
+              echo "build successful"
+
+# name: "Sample Workflow"
+# on: 
+#     push: 
+#         branches: 
+#         - master
+# jobs: 
+#     testing_job:
+#         runs-on: ubuntu-latest
+#         steps: 
+#             - name: "Welcome Step"
+#               run: |
+#                 echo "Welcome to this step"
